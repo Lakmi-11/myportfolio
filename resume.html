@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">Your Name</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Resume</h2>
+      <p>
+        <a class="btn" href="YourResume.pdf" target="_blank" download>Download PDF</a>
+      </p>
+      <h3>Summary</h3>
+      <p>Brief summary about your experience and skills.</p>
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>HTML/CSS</li><li>JavaScript</li><li>React</li><li>Responsive design</li>
+      </ul>
+      <h3>Experience</h3>
+      <ul>
+        <li><strong>Job Title</strong> — Company (Year-Year)<br>Short description of your role.</li>
+        <!-- Add more experience items -->
+      </ul>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Degree</strong> — School (Year-Year)</li>
+        <!-- Add more education items -->
+      </ul>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+    <footer>
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

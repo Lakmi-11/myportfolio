@@ -8,10 +8,10 @@
     <script src="https://kit.fontawesome.com/8e0e6b1c2d.js" crossorigin="anonymous"></script>
     <style>
         .about-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
             padding: 100px 0 80px;
             text-align: center;
-            color: white;
+            color: #0C342C;
             position: relative;
             overflow: hidden;
         }
@@ -36,13 +36,18 @@
             font-size: 3.5rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            background: linear-gradient(135deg, #E3EF26, #076653);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .about-hero p {
             font-size: 1.3rem;
             max-width: 600px;
             margin: 0 auto;
-            opacity: 0.9;
+            color: #06231D;
+            font-weight: 500;
         }
 
         .about-content {
@@ -63,15 +68,19 @@
 
         .story-section h2 {
             font-size: 2.5rem;
-            color: #2c3e50;
+            color: #0C342C;
             margin-bottom: 30px;
             text-align: center;
+            background: linear-gradient(135deg, #E3EF26, #076653);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .story-text {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #555;
+            color: #06231D;
             text-align: justify;
         }
 
@@ -83,8 +92,8 @@
         }
 
         .info-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
+            color: #FFFDEE;
             padding: 40px;
             border-radius: 20px;
             text-align: center;
@@ -94,20 +103,21 @@
         }
 
         .info-card:nth-child(2) {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
         }
 
         .info-card:nth-child(3) {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
         }
 
         .info-card:nth-child(4) {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
         }
 
         .info-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #E3EF26 0%, #0C342C 100%);
         }
 
         .info-card::before {
@@ -130,12 +140,14 @@
             font-size: 3rem;
             margin-bottom: 20px;
             display: block;
+            color: #0C342C;
         }
 
         .info-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
             font-weight: 600;
+            color: #0C342C;
         }
 
         .info-card p {
@@ -154,9 +166,13 @@
 
         .timeline h2 {
             font-size: 2.5rem;
-            color: #2c3e50;
+            color: #0C342C;
             margin-bottom: 40px;
             text-align: center;
+            background: linear-gradient(135deg, #E3EF26, #076653);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .timeline-item {
@@ -172,7 +188,7 @@
             top: 60px;
             bottom: -40px;
             width: 2px;
-            background: linear-gradient(to bottom, #667eea, #764ba2);
+            background: linear-gradient(to bottom, #076653, #06231D);
         }
 
         .timeline-item:last-child::before {
@@ -182,12 +198,12 @@
         .timeline-icon {
             width: 100px;
             height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #076653 0%, #06231D 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #FFFDEE;
             font-size: 1.5rem;
             margin-right: 30px;
             flex-shrink: 0;
@@ -195,18 +211,18 @@
 
         .timeline-content h4 {
             font-size: 1.3rem;
-            color: #2c3e50;
+            color: #0C342C;
             margin-bottom: 10px;
         }
 
         .timeline-content p {
-            color: #666;
+            color: #076653;
             line-height: 1.6;
         }
 
         .interests {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #076653 0%, #06231D 100%);
+            color: #FFFDEE;
             border-radius: 20px;
             padding: 60px;
             text-align: center;
@@ -215,6 +231,10 @@
         .interests h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
+            background: linear-gradient(135deg, #E3EF26, #FFFDEE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .interests-grid {
@@ -271,7 +291,7 @@
         }
 
         nav {
-            background: rgba(255,255,255,0.95);
+            background: linear-gradient(135deg, #076653 0%, #06231D 100%);
             backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
@@ -292,13 +312,24 @@
 
         nav a {
             text-decoration: none;
-            color: #2c3e50;
+            color: #FFFFFF;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
         nav a:hover {
-            color: #667eea;
+            color: #E3EF26;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #FFFDEE 0%, #E3EF26 100%);
         }
 
         body {
@@ -438,8 +469,8 @@
         </section>
     </div>
 
-    <footer style="text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 60px;">
-        <p>© <span id="year">2025</span> Lakmi Thilakshana — Built with passion and code</p>
+    <footer style="text-align: center; padding: 40px; background: linear-gradient(135deg, #076653 0%, #06231D 100%); color: #FFFDEE; margin-top: 60px;">
+        <p>© <span id="year">2025</span> Lakmi Thilakshana</p>
     </footer>
 
     <script>

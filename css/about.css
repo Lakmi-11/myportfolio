@@ -20,19 +20,22 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
-    padding: 15px 0;
+    padding: 15px 40px;   /* added side padding */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
+
+    display: flex;
+    justify-content: flex-end;  /* push items to the right */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 30px;
     margin: 0;
     padding: 0;
 }
+
 
 nav ul li a {
     text-decoration: none;

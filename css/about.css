@@ -1,0 +1,213 @@
+/* ---------- Global Styles ---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFDEE; /* light background */
+    color: #06231D; /* dark green text */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 15px;
+    font-weight: 600;
+    color: #06231D;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #076653;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFB703; /* accent yellow */
+}
+
+/* ---------- Hero Section ---------- */
+.about-hero {
+    background: linear-gradient(135deg, #076653 0%, #06231D 100%);
+    color: #FFFDEE;
+    text-align: center;
+    padding: 120px 20px 80px;
+    margin-top: 60px;
+}
+
+.about-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+}
+
+/* ---------- About Content ---------- */
+.about-content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Story Section */
+.story-section {
+    margin-bottom: 50px;
+}
+
+.story-section h2 {
+    color: #076653;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ---------- Cards ---------- */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #076653;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #06231D;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+    margin-bottom: 60px;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #076653;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background: #076653;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.timeline-content h4 {
+    margin-bottom: 8px;
+    color: #06231D;
+}
+
+/* ---------- Interests ---------- */
+.interests {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.interests h2 {
+    color: #076653;
+    margin-bottom: 20px;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.interest-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-item i {
+    font-size: 1.8rem;
+    color: #076653;
+    margin-bottom: 10px;
+}
+
+.interest-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #076653 0%, #06231D 100%);
+    color: #FFFDEE;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}

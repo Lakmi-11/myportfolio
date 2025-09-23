@@ -20,12 +20,13 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
-    padding: 15px 40px;   /* added side padding */
+    padding: 15px 40px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 
     display: flex;
-    justify-content: flex-end;  /* push items to the right */
+    justify-content: flex-end;  /* 👈 pushes links to the right */
+    align-items: center;
 }
 
 nav ul {
@@ -35,7 +36,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 
 nav ul li a {
     text-decoration: none;
@@ -47,6 +47,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFB703; /* accent yellow */
 }
+
 
 /* ---------- Hero Section ---------- */
 .about-hero {

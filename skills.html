@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills - Lakmi Thilakshana</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<script>
+  // Get current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Select all navbar links
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  navLinks.forEach(link => {
+    // Get link file name
+    const linkPage = link.getAttribute("href");
+
+    // If link matches current page, add active class
+    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Lakmi Thilakshana</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills Header -->
+  <section class="skills-hero">
+    <h1>My Skills</h1>
+    <p>Technologies and tools I use to build modern applications</p>
+  </section>
+
+  <!-- Skills Content -->
+  <section class="skills-container">
+
+    <div class="skill-card">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>Java</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+        <li>Python (Basic)</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web & Frameworks</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>REST APIs</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Databases</h3>
+      <ul>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools & Concepts</h3>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>Visual Studio</li>
+        <li>Android Studio</li>
+        <li>Figma</li>
+        <li>OOP</li>
+        <li>MVC Architecture</li>
+        <li>SDLC</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Certifications Section -->
+<section class="certifications">
+  <h2>Certifications</h2>
+
+  <div class="certificate-grid">
+
+    <div class="certificate-card">
+      <h3>C Programming</h3>
+      <p>DP Education</p>
+      <p>Year: 2025</p>
+      <a href="certificates/Certificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+
+    <!-- Add more certificates like this -->
+  
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 — Built with ❤️ by Lakmi Thilakshana</p>
+  </footer>
+
+  <!-- Skill Card Selected Animation -->
+  <script>
+    const cards = document.querySelectorAll(".skill-card");
+
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        cards.forEach(c => c.classList.remove("active"));
+        card.classList.add("active");
+      });
+    });
+  </script>
+
+</body>
+</html>

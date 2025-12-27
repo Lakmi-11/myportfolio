@@ -3,67 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakmi| Portfolio</title>
+  <title>Lakmi | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <!-- FontAwesome for Icons -->
-  <script src="https://kit.fontawesome.com/8e0e6b1c2d.js" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome (NO integrity = no blocking) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
+<script>
+  // Get current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Select all navbar links
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  navLinks.forEach(link => {
+    // Get link file name
+    const linkPage = link.getAttribute("href");
+
+    // If link matches current page, add active class
+    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
 <body>
 
   <!-- Navbar -->
-  <nav>
+  <nav class="navbar">
     <h1>Lakmi Thilakshana</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="images/lakmi.jpg" alt="Lakmi Thilakshana" class="hero-image">
+    <img src="images/lakmi.jpg" alt="Lakmi Thilakshana">
+
     <div class="hero-text">
       <h2>Hey I'm <span>Lakmi Thilakshana</span></h2>
-      <h3>I’m a <span>IT Undergraduate</span></h3>
+      <h3>I’m an <span>IT Undergraduate</span></h3>
+
       <p>
-        I’m currently pursuing my degree in SLIIT with a specialization in Information Technology.
-        Also i want to be a software engineer.I love turning ideas into digital solutions whether it’s coding applications, 
-        managing data, or exploring emerging technologies. 
-         My portfolio showcases the projects I’ve built during my studies and personal explorations. 
-         Let’s connect and build something innovative together!"
+        I’m currently pursuing my degree at SLIIT with a specialization in Information Technology.
+        I aspire to become a software engineer and enjoy turning ideas into digital solutions.
+        This portfolio showcases my academic and personal projects.
       </p>
+
       <div class="socials">
-        <!-- Removed LinkedIn and GitHub icons -->
+        <a href="https://github.com/lakmi-11" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
       </div>
+
       <a href="about.html" class="btn">See More</a>
     </div>
   </section>
 
-  <!-- SVG Filters for Liquid Animation -->
-  <svg width="0" height="0">
-    <filter id="liquid1">
-      <feTurbulence id="turb1" baseFrequency="0.02 0.03" numOctaves="2" seed="2" />
-      <feDisplacementMap in2="turb1" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-    <filter id="liquid2">
-      <feTurbulence id="turb2" baseFrequency="0.03 0.04" numOctaves="2" seed="4" />
-      <feDisplacementMap in2="turb2" in="SourceGraphic" scale="12" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-    <filter id="liquid3">
-      <feTurbulence id="turb3" baseFrequency="0.04 0.05" numOctaves="2" seed="6" />
-      <feDisplacementMap in2="turb3" in="SourceGraphic" scale="16" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </svg>
-
-   <!-- Navbar -->
-  <nav>
-     <footer>
-      <p>© <span id="year"></span> 2025 — Built with Lakmi</p>
-    </footer>
-  </nav>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 — Built with ❤️ by Lakmi Thilakshana</p>
+  </footer>
 
 </body>
 </html>

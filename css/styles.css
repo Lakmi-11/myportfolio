@@ -285,3 +285,51 @@ footer {
 .certificate-card a:hover {
   color: #df717b;
 }
+
+/* ============================= */
+/*        PROJECTS PAGE          */
+/* ============================= */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
+  border-radius: 18px;
+  padding: 30px;
+  color: #06231D;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+  background: linear-gradient(135deg, #E3EF26 0%, #0C342C 100%);
+  color: #FFFDEE;
+}
+
+.project-card h3 {
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  line-height: 1.6;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.project-links i {
+  margin-right: 6px;
+}

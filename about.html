@@ -31,16 +31,13 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
         }
-
         .about-hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #E3EF26, #076653);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+             font-size: 3.5rem;
+             margin-bottom: 1rem;
+             font-weight: 700;
+             color: #000000;
+}
+
 
         .about-hero p {
             font-size: 1.3rem;
@@ -59,12 +56,13 @@
         }
 
         .story-section {
-            background: rgb(255, 255, 255);
-            border-radius: 20px;
-            padding: 60px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin-bottom: 60px;
-        }
+             background: linear-gradient(135deg, #076653 0%, #06231D 100%);
+             border-radius: 20px;
+             padding: 60px;
+             margin-bottom: 60px;
+             box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+       }
+
 
         .story-section h2 {
             font-size: 2.5rem;
@@ -80,7 +78,7 @@
         .story-text {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #06231D;
+            color: #e6edeb;
             text-align: justify;
         }
 
@@ -157,7 +155,7 @@
         }
 
         .timeline {
-            background: white;
+            background: linear-gradient(135deg, #E2FBCE 0%, #076653 100%);
             border-radius: 20px;
             padding: 60px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -333,6 +331,8 @@
             background: linear-gradient(135deg, #FFFDEE 0%, #E3EF26 100%);
         }
     </style>
+
+    
 </head>
 <script>
   // Get current page file name
@@ -360,8 +360,8 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
     </ul>
   </nav>
 
@@ -483,9 +483,10 @@
         </section>
     </div>
 
-    <footer style="text-align: center; padding: 40px; background: linear-gradient(135deg, #076653 0%, #06231D 100%); color: #FFFDEE; margin-top: 60px;">
-        <p>© <span id="year">2025</span> Lakmi Thilakshana </p>
-    </footer>
+    <!-- Footer -->
+  <footer>
+    <p>© 2025 — Built with ❤️ by Lakmi Thilakshana</p>
+  </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -511,4 +512,4 @@
         });*/
     </script>
 </body>
-</html> 
+</html> update this part

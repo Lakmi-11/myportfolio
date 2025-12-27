@@ -2,49 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | Lakmi Thilakshana</title>
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1 class="logo">Your Name</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <h2>Resume</h2>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Lakmi Thilakshana</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html" >Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Resume Header -->
+  <section class="skills-hero">
+    <h1>Resume</h1>
+    <p>IT Undergraduate | Aspiring Software Engineer</p>
+
+    <a class="btn" href="assets\Lakmi_Thilakshana_Software_Engineer_Intern.pdf.pdf" download>
+      Download CV (PDF)
+    </a>
+  </section>
+
+  <!-- Resume Content -->
+  <section class="skills-container">
+
+    <!-- Summary -->
+    <div class="skill-card">
+      <h3>Professional Summary</h3>
       <p>
-        <a class="btn" href="YourResume.pdf" target="_blank" download>Download PDF</a>
+        I am an IT undergraduate with a strong interest in software engineering,
+        web development, and mobile application development. I enjoy building
+        real-world projects using modern technologies and continuously improving
+        my technical and problem-solving skills.
       </p>
-      <h3>Summary</h3>
-      <p>Brief summary about your experience and skills.</p>
-      <h3>Skills</h3>
-      <ul class="skills">
-        <li>HTML/CSS</li><li>JavaScript</li><li>React</li><li>Responsive design</li>
-      </ul>
-      <h3>Experience</h3>
+    </div>
+
+    <!-- Skills -->
+    <div class="skill-card">
+      <h3>Technical Skills</h3>
       <ul>
-        <li><strong>Job Title</strong> — Company (Year-Year)<br>Short description of your role.</li>
-        <!-- Add more experience items -->
+        <li>Programming: Java, C, C#, JavaScript, Kotlin, Python (Basic)</li>
+        <li>Web: HTML, CSS, React.js, Node.js, Express.js</li>
+        <li>Databases: MongoDB, MySQL</li>
+        <li>Tools: Git, GitHub, VS Code, Android Studio, Figma</li>
+        <li>Concepts: OOP, REST APIs, MVC, SDLC</li>
       </ul>
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Degree</strong> — School (Year-Year)</li>
-        <!-- Add more education items -->
-      </ul>
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    </section>
-    <footer>
-      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
-    </footer>
-  </div>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    </div>
+
+   <div class="skill-card">
+  <h3>Academic & Personal Projects</h3>
+  <ul>
+    <li>
+      <strong>Student Management System (C#)</strong> – Personal project developed
+      using C# and .NET to manage student records, classes, payments, and history.
+    </li>
+    <li>
+      <strong>Cashew Nut Management System (MERN)</strong> – Group project where
+      I developed the Inventory Management module for managing stock and products.
+    </li>
+    <li>
+      <strong>Finance Tracker Mobile App</strong> – Android application developed
+      using Kotlin for tracking income and expenses (Academic assignment).
+    </li>
+    <li>
+      <strong>Don Laine Campground Website Redesign (HCI)</strong> – UI/UX group
+      project redesigning an existing campground website using Figma, focusing
+      on events, seasonal offers, and package pages.
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Education -->
+   <div class="skill-card">
+  <h3>Education</h3>
+  <ul>
+    <li>
+      <strong>BSc in Information Technology</strong><br>
+      Sri Lanka Institute of Information Technology (SLIIT)<br>
+      Specialization: Information Technology<br>
+      Undergraduate
+    </li>
+    <br>
+    <li>
+      <strong>Diploma in English</strong><br>
+      Rajarata University of Sri Lanka<br>
+      2023
+    </li>
+  </ul>
+</div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 — Built with ❤️ by Lakmi Thilakshana</p>
+  </footer>
+
 </body>
 </html>
